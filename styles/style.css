@@ -683,17 +683,147 @@ div.footer_links {
     padding-top: 13px;
 }
 
-.copyrights_content .policies a{
-color:#e42a12;
-text-decoration: none;
+.copyrights_content .policies a {
+    color: #e42a12;
+    text-decoration: none;
 }
 
-.copyrights_content .madewith{
+.copyrights_content .madewith {
     font-weight: 600;
 }
 
-.copyrights_content #love_icon svg{
+.copyrights_content #love_icon svg {
     width: 19px;
     height: 19px;
-    fill:#e42a12;
+    fill: #e42a12;
+}
+
+#nav_list_mobile {
+    display: none;
+}
+
+
+/**Media Querries**/
+
+@media only screen and (max-width: 768px) {
+    #nav_list_mobile {
+        background-color: #fff;
+    }
+
+    #visible_mobile_logo_and_icon {
+        width: 100%;
+        display: flex;
+    }
+
+    #logo_menu_pop_up {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        background-color: white;
+
+
+    }
+
+    #logo_menu_pop_up .logo svg {
+        width: 150px;
+        height: 50px;
+    }
+
+    #logo_menu_icon {
+        width: 100%;
+        display: flex;
+    }
+
+    .visible_mobile_logo {
+        width: 90%;
+    }
+
+    .visible_mobile_logo svg {
+        width: 150px;
+        height: 50px;
+    }
+
+    .visible_mobile_icon {
+        width: 10%;
+        height: 50px;
+    }
+
+    #humbeger {
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    .logo_menu_icon {
+        display: flex;
+        width: 100%;
+    }
+
+    .mobileMenuIcon {
+        width: 50px;
+        height: 50px;
+        ;
+        display: block;
+    }
+
+    span.logo {
+        text-align: left;
+        width: 90%;
+        justify-content: flex-start;
+        padding-left: 5%;
+    }
+
+    .humberger_menu {
+        width: 10%;
+        padding: 10px;
+    }
+
+    #nav_lists {
+        display: none;
+    }
+
+    #nav_list_mobile {
+        display: block;
+        padding: 10px;
+        background-color: white;
+    }
+
+    #nav_list_mobile ul li {
+        line-height: 2em;
+        list-style: none;
+    }
+
+    #nav_list_mobile ul li a {
+        text-decoration: none;
+        color: #484848;
+        font-size: 10pt;
+    }
+
+    #nav_list_mobile button {
+        background-color: #b6220e;
+        border: none;
+        color: white;
+        border-radius: 30px;
+        width: 87px;
+        height: 48px;
+        font-weight: bold;
+
+    }
+
+    .humberger_menu_x {
+        width: 53px;
+        height: 50px;
+        background-color: #b6220e;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin: 5px;
+        font-weight: bold;
+
+    }
+
 }
